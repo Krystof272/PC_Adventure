@@ -1,9 +1,9 @@
-package Commands;
+import Commands.Command;
 
 public class Help implements Command {
     @Override
     public String execute() {
-        return "";
+        return Console.getCommands();
     }
 
     @Override
