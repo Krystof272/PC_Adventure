@@ -1,10 +1,10 @@
 {
-  "Locations": [
+  "locations": [
     {
       "id": "motherboard",
       "name": "Zakladni deska",
       "uvodniText": "Toto je zakladni deska",
-      "neededItems": "",
+      "neededItems": [],
       "inventory": [
         null,
         null
@@ -21,7 +21,7 @@
       "id": "psu",
       "name": "Zdroj",
       "uvodniText": "Toto je zdroj",
-      "neededItems": "",
+      "neededItems": [],
       "inventory": [
         null,
         null
@@ -38,7 +38,7 @@
       "id": "gpu",
       "name": "Graficka karta",
       "uvodniText": "Toto je graficka karta",
-      "neededItems": "",
+      "neededItems": [],
       "inventory": [
         null,
         null,
@@ -58,7 +58,7 @@
       "id": "ram",
       "name": "RAM",
       "uvodniText": "Toto je ram",
-      "neededItems": "",
+      "neededItems": [],
       "inventory": [
         null,
         null
@@ -75,7 +75,7 @@
       "id": "hdd",
       "name": "Hard disk",
       "uvodniText": "Toto je hdd",
-      "neededItems": "",
+      "neededItems": [],
       "inventory": [
         null
       ],
@@ -91,7 +91,7 @@
       "id": "cpu",
       "name": "Procesor",
       "uvodniText": "Toto je procesor",
-      "neededItems": "",
+      "neededItems": [],
       "inventory": [
         null,
         null,
@@ -99,10 +99,24 @@
       ],
       "turnedOn": false,
       "neighbours": {
-        "sever": null,
+        "sever": "chlazeni",
         "jih": null,
         "vychod": null,
         "zapad": "gpu"
+      }
+    },
+    {
+      "id": "chlazeni",
+      "name": "Chlazeni",
+      "uvodniText": "Toto je chlazeni",
+      "neededItems": [],
+      "inventory": [null],
+      "turnedOn": true,
+      "neighbours": {
+        "sever": null,
+        "jih": "cpu",
+        "vychod": null,
+        "zapad": null
       }
     }
   ]
