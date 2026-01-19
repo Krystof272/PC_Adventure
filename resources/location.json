@@ -1,0 +1,109 @@
+{
+  "Locations": [
+    {
+      "id": "motherboard",
+      "name": "Zakladni deska",
+      "uvodniText": "Toto je zakladni deska",
+      "neededItems": "",
+      "inventory": [
+        null,
+        null
+      ],
+      "turnedOn": false,
+      "neighbours": {
+        "sever": "cpu",
+        "jih": "gpu",
+        "vychod": "ram",
+        "zapad": "psu"
+      }
+    },
+    {
+      "id": "psu",
+      "name": "Zdroj",
+      "uvodniText": "Toto je zdroj",
+      "neededItems": "",
+      "inventory": [
+        null,
+        null
+      ],
+      "turnedOn": true,
+      "neighbours": {
+        "sever": "cpu",
+        "jih": "gpu",
+        "vychod": "motherboard",
+        "zapad": null
+      }
+    },
+    {
+      "id": "gpu",
+      "name": "Graficka karta",
+      "uvodniText": "Toto je graficka karta",
+      "neededItems": "",
+      "inventory": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "turnedOn": false,
+      "neighbours": {
+        "sever": "motherboard",
+        "jih": null,
+        "vychod": "hdd",
+        "zapad": "psu"
+      }
+    },
+    {
+      "id": "ram",
+      "name": "RAM",
+      "uvodniText": "Toto je ram",
+      "neededItems": "",
+      "inventory": [
+        null,
+        null
+      ],
+      "turnedOn": true,
+      "neighbours": {
+        "sever": null,
+        "jih": null,
+        "vychod": null,
+        "zapad": "motherboard"
+      }
+    },
+    {
+      "id": "hdd",
+      "name": "Hard disk",
+      "uvodniText": "Toto je hdd",
+      "neededItems": "",
+      "inventory": [
+        null
+      ],
+      "turnedOn": false,
+      "neighbours": {
+        "sever": null,
+        "jih": null,
+        "vychod": null,
+        "zapad": "gpu"
+      }
+    },
+    {
+      "id": "cpu",
+      "name": "Procesor",
+      "uvodniText": "Toto je procesor",
+      "neededItems": "",
+      "inventory": [
+        null,
+        null,
+        null
+      ],
+      "turnedOn": false,
+      "neighbours": {
+        "sever": null,
+        "jih": null,
+        "vychod": null,
+        "zapad": "gpu"
+      }
+    }
+  ]
+}

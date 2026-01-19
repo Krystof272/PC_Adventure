@@ -1,4 +1,6 @@
-public class Help implements Command{
+package Commands;
+
+public class Jdi implements Command {
     @Override
     public String execute() {
         return "";

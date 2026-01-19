@@ -1,4 +1,6 @@
-public class Inventar implements Command{
+package Commands;
+
+public class Seber implements Command {
     @Override
     public String execute() {
         return "";

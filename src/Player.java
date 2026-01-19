@@ -7,8 +7,8 @@ public class Player {
     private String currentLocation;
     private String currentTalkingNPC;
 
-    public boolean isInInventory(){
-        return false;
+    public boolean isInInventory(String itemName) {
+        return inventory.contains(itemName);
     }
 
     public String getCurrentLocation() {

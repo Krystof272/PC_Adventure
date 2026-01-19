@@ -1,4 +1,6 @@
-public class Pouzij implements Command{
+package Commands;
+
+public class Mluv implements Command {
     @Override
     public String execute() {
         return "";

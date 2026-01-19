@@ -1,4 +1,6 @@
-public class Jdi implements Command{
+package Commands;
+
+public class Pouzij implements Command {
     @Override
     public String execute() {
         return "";

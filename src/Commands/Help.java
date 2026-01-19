@@ -1,4 +1,6 @@
-public class Seber implements Command{
+package Commands;
+
+public class Help implements Command {
     @Override
     public String execute() {
         return "";
