@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Location {
@@ -11,19 +12,17 @@ public class Location {
     private HashMap<String, String> neighbours;
 
 
-    public Location() {
 
-    }
-
-    public boolean isTurnedOn() {
-        return turnedOn;
-    }
-
-    public boolean addItem(String item) {
-        return false;
-    }
-
-    public boolean removeItem(String item) {
-        return false;
+    @Override
+    public String toString() {
+        return "\nLocation{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", uvodniText='" + uvodniText + '\'' +
+                ", neededItems=" + neededItems +
+                ", inventory=" + Arrays.toString(inventory) +
+                ", turnedOn=" + turnedOn +
+                ", neighbours=" + neighbours +
+                '}';
     }
 }
