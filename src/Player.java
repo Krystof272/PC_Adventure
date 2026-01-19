@@ -7,6 +7,14 @@ public class Player {
     private String currentLocation;
     private String currentTalkingNPC;
 
+    public Player(String name) {
+        this.name = name;
+        this.inventory = new ArrayList<>();
+        this.maxInventorySize = 2;
+        this.currentLocation = "motherboard";
+        this.currentTalkingNPC = null;
+    }
+
     public boolean isInInventory(String itemName) {
         return inventory.contains(itemName);
     }
