@@ -16,7 +16,7 @@ public class Console {
     }
 
     public void inicialization(){
-        comands.put("jdi", new Jdi());
+        comands.put("jdi", new Move());
     }
 
     public void execute(){
@@ -30,6 +30,8 @@ public class Console {
         } else {
             System.out.println("Command not recognized");
         }
+
+        System.out.println(player);
     }
 
     public void start(){
