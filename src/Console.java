@@ -15,7 +15,7 @@ public class Console {
         this.player = new Player("Player");
     }
 
-    public void inicialization(){
+    public void initialization(){
         comands.put("jdi", new Move());
     }
 
@@ -35,7 +35,7 @@ public class Console {
     }
 
     public void start(){
-        inicialization();
+        initialization();
         //TODO nacitani jmena hrace z konzole
         do{
             execute();
