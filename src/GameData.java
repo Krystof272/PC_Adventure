@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  */
 public class GameData {
-    public ArrayList<Location> locations;
+    private ArrayList<Location> locations;
 
     /**
      * Loads game data from a JSON file.
@@ -41,12 +41,5 @@ public class GameData {
         } catch (Exception e) {
             throw new RuntimeException("Chyba při načítání JSON: " + e.getMessage());
         }
-    }
-
-    @Override
-    public String toString() {
-        return "GameData{" +
-                "locations=" + locations +
-                '}';
     }
 }
