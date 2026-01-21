@@ -1,0 +1,125 @@
+{
+  "locations": [
+    {
+      "id": "motherboard",
+      "name": "Zakladni deska",
+      "introductoryText": "Toto je zakladni deska",
+      "neededItems": [],
+      "inventory": [
+        null,
+        null
+      ],
+      "turnedOn": false,
+      "neighbours": {
+        "sever": "cpu",
+        "jih": "gpu",
+        "vychod": "ram",
+        "zapad": "psu"
+      }
+    },
+    {
+      "id": "psu",
+      "name": "Zdroj",
+      "introductoryText": "Toto je zdroj",
+      "neededItems": [],
+      "inventory": [
+        null,
+        null
+      ],
+      "turnedOn": true,
+      "neighbours": {
+        "sever": "cpu",
+        "jih": "gpu",
+        "vychod": "motherboard",
+        "zapad": ""
+      }
+    },
+    {
+      "id": "gpu",
+      "name": "Graficka karta",
+      "introductoryText": "Toto je graficka karta",
+      "neededItems": [],
+      "inventory": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "turnedOn": false,
+      "neighbours": {
+        "sever": "motherboard",
+        "jih": "",
+        "vychod": "hdd",
+        "zapad": "psu"
+      }
+    },
+    {
+      "id": "ram",
+      "name": "RAM",
+      "introductoryText": "Toto je ram",
+      "neededItems": [],
+      "inventory": [
+        null,
+        null
+      ],
+      "turnedOn": true,
+      "neighbours": {
+        "sever": "",
+        "jih": "",
+        "vychod": "",
+        "zapad": "motherboard"
+      }
+    },
+    {
+      "id": "hdd",
+      "name": "Hard disk",
+      "introductoryText": "Toto je hdd",
+      "neededItems": [],
+      "inventory": [
+        null
+      ],
+      "turnedOn": false,
+      "neighbours": {
+        "sever": "",
+        "jih": "",
+        "vychod": "",
+        "zapad": "gpu"
+      }
+    },
+    {
+      "id": "cpu",
+      "name": "Procesor",
+      "introductoryText": "Toto je procesor",
+      "neededItems": [],
+      "inventory": [
+        null,
+        null,
+        null
+      ],
+      "turnedOn": false,
+      "neighbours": {
+        "sever": "chlazeni",
+        "jih": "motherboard",
+        "vychod": "",
+        "zapad": "psu"
+      }
+    },
+    {
+      "id": "chlazeni",
+      "name": "Chlazeni",
+      "introductoryText": "Toto je chlazeni",
+      "neededItems": [],
+      "inventory": [
+        null
+      ],
+      "turnedOn": true,
+      "neighbours": {
+        "sever": "",
+        "jih": "cpu",
+        "vychod": "",
+        "zapad": ""
+      }
+    }
+  ]
+}
