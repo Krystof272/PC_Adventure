@@ -1,6 +1,9 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * this class displays and processes input from the user
+ */
 public class Console {
     private HashMap<String, Command> comands;
     private boolean isExit;
@@ -15,10 +18,16 @@ public class Console {
         this.player = new Player("Player");
     }
 
+    /**
+     * adds commands to hashmap
+     */
     public void initialization(){
         comands.put("jdi", new Move());
     }
 
+    /**
+     * console output and input command loader, input command analyzer
+     */
     public void execute(){
         System.out.print(">> ");
         String inputCommand = sc.nextLine();
@@ -34,6 +43,9 @@ public class Console {
         System.out.println(player);
     }
 
+    /**
+     *  cycle loop
+     */
     public void start(){
         initialization();
         //TODO nacitani jmena hrace z konzole

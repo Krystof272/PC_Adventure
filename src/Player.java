@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+ * this class creates player
+ */
 public class Player {
     private String name;
     private ArrayList<String> inventory;
