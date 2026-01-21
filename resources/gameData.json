@@ -110,7 +110,9 @@
       "name": "Chlazeni",
       "uvodniText": "Toto je chlazeni",
       "neededItems": [],
-      "inventory": [null],
+      "inventory": [
+        null
+      ],
       "turnedOn": true,
       "neighbours": {
         "sever": null,
