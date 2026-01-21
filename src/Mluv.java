@@ -1,8 +1,7 @@
-package Commands;
-
 public class Mluv implements Command {
+
     @Override
-    public String execute() {
+    public String execute(String command, Player player, GameData datos) {
         return "";
     }
 
