@@ -5,20 +5,40 @@ import java.util.HashMap;
 public class Location {
     private String id;
     private String name;
-    private String uvodniText;
+    private String introductoryText;
     private ArrayList<String> neededItems;
     private String[] inventory;
     private boolean turnedOn;
     private HashMap<String, String> neighbours;
 
+    /**
+     * gets the neighbour locatin in that direction
+     *
+     * @param direction the requsted direction from user
+     * @return returns the neighbour location in that direction or
+     * null if it doesn't exist
+     */
+    public String getNeighbour(String direction) {
+        if (neighbours.containsKey(direction)) {
+            return neighbours.get(direction);
+        }
+        return null;
+    }
 
+    public String getId() {
+        return id;
+    }
+
+    public String getIntroductoryText() {
+        return introductoryText;
+    }
 
     @Override
     public String toString() {
         return "\nLocation{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", uvodniText='" + uvodniText + '\'' +
+                ", introductoryText='" + introductoryText + '\'' +
                 ", neededItems=" + neededItems +
                 ", inventory=" + Arrays.toString(inventory) +
                 ", turnedOn=" + turnedOn +
