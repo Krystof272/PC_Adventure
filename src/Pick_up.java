@@ -1,4 +1,4 @@
-public class Seber implements Command {
+public class Pick_up implements Command {
 
     @Override
     public String execute(String command, Player player, GameData datos) {

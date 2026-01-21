@@ -1,4 +1,4 @@
-public class Pouzij implements Command {
+public class Inventory implements Command {
 
     @Override
     public String execute(String command, Player player, GameData datos) {

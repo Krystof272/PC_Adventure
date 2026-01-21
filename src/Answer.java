@@ -1,4 +1,4 @@
-public class Inventar implements Command {
+public class Answer implements Command {
 
     @Override
     public String execute(String command, Player player, GameData datos) {

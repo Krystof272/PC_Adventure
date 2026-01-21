@@ -1,4 +1,4 @@
-public class Mluv implements Command {
+public class Speak implements Command {
 
     @Override
     public String execute(String command, Player player, GameData datos) {

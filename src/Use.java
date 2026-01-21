@@ -1,4 +1,4 @@
-public class Odpoved implements Command {
+public class Use implements Command {
 
     @Override
     public String execute(String command, Player player, GameData datos) {
