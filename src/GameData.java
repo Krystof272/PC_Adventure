@@ -42,4 +42,18 @@ public class GameData {
             throw new RuntimeException("Chyba při načítání JSON: " + e.getMessage());
         }
     }
+
+    /**
+     *
+     * @param id of the wanted location
+     * @return returns null if the location wasn't found or returns the wanted location
+     */
+    public Location getLocation(String id) {
+        for (Location location : locations) {
+            if (location.getId().equals(id)) {
+                return location;
+            }
+        }
+        return null;
+    }
 }
