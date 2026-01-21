@@ -4,14 +4,14 @@ public class Player {
     private String name;
     private ArrayList<String> inventory;
     private int maxInventorySize;
-    private String currentLocation;
+    private String currentLocationId;
     private String currentTalkingNPC;
 
     public Player(String name) {
         this.name = name;
         this.inventory = new ArrayList<>();
         this.maxInventorySize = 2;
-        this.currentLocation = "motherboard";
+        this.currentLocationId = "motherboard";
         this.currentTalkingNPC = null;
     }
 
@@ -19,12 +19,12 @@ public class Player {
         return inventory.contains(itemName);
     }
 
-    public String getCurrentLocation() {
-        return currentLocation;
+    public String getCurrentLocationId() {
+        return currentLocationId;
     }
 
-    public void setCurrentLocation(String currentLocation) {
-        this.currentLocation = currentLocation;
+    public void setCurrentLocationId(String currentLocationId) {
+        this.currentLocationId = currentLocationId;
     }
 
     public String getName() {
@@ -41,5 +41,16 @@ public class Player {
 
     public ArrayList<String> getInventory() {
         return inventory;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "name='" + name + '\'' +
+                ", inventory=" + inventory +
+                ", maxInventorySize=" + maxInventorySize +
+                ", currentLocationId='" + currentLocationId + '\'' +
+                ", currentTalkingNPC='" + currentTalkingNPC + '\'' +
+                '}';
     }
 }
