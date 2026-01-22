@@ -31,11 +31,11 @@ public class Console {
     public void execute(){
         System.out.print(">> ");
         String inputCommand = sc.nextLine();
-        String[] commnads = inputCommand.split(" ");
+        String[] inputCommnads = inputCommand.split(" ");
 
-        if (comands.containsKey(commnads[0])){
-            System.out.println(comands.get(commnads[0]).execute(commnads[1], player, datos));
-            isExit = comands.get(commnads[0]).isExit();
+        if (comands.containsKey(inputCommnads[0])){
+            System.out.println(comands.get(inputCommnads[0]).execute(inputCommnads[1], player, datos));
+            isExit = comands.get(inputCommnads[0]).isExit();
         } else {
             System.out.println("Command not recognized");
         }
