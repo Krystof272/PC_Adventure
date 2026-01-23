@@ -16,12 +16,63 @@
       "description": "Puvod ma v Ram pameti, jen ty nejdulezitejsi komponenty ho potrebuji"
     }
   ],
+  "npcs": [
+    {
+      "id": "zdrojik",
+      "name": "Zdrojik",
+      "homeLocationId": "psu",
+      "initialEncouterText": "Ja jsem zdrojik",
+      "answers": {
+        "1": "ne",
+        "2": "ano,",
+        "3": "mozna"
+      }
+    },
+    {
+      "id": "chladik",
+      "name": "Chladik",
+      "homeLocationId": "chlazeni",
+      "initialEncouterText": "Ja jsem chladik",
+      "answers": {
+        "1": "ne",
+        "2": "ano,",
+        "3": "mozna"
+      }
+    },
+    {
+      "id": "zakladacek",
+      "name": "Zakladacek",
+      "homeLocationId": "motherboard",
+      "initialEncouterText": "Ja jsem zakladacek",
+      "answers": {
+        "1": "ne",
+        "2": "ano,",
+        "3": "mozna"
+      }
+    },
+    {
+      "id": "ramicek",
+      "name": "Ramicek",
+      "homeLocationId": "ram",
+      "initialEncouterText": "Ja jsem ramicek",
+      "answers": {
+        "1": "ne",
+        "2": "ano,",
+        "3": "mozna"
+      }
+    }
+  ],
+  "bugisek": {
+    "location": null
+  },
   "locations": [
     {
       "id": "motherboard",
       "name": "Zakladni deska",
       "introductoryText": "Toto je zakladni deska",
-      "neededItems": ["2 info"],
+      "neededItems": [
+        "2 info"
+      ],
       "inventory": [
         null,
         null
@@ -38,7 +89,9 @@
       "id": "psu",
       "name": "Zdroj",
       "introductoryText": "Toto je zdroj",
-      "neededItems": ["2 electricity"],
+      "neededItems": [
+        "2 electricity"
+      ],
       "inventory": [
         null,
         null
@@ -55,7 +108,11 @@
       "id": "gpu",
       "name": "Graficka karta",
       "introductoryText": "Toto je graficka karta",
-      "neededItems": ["2 chlazeni", "2 electricity", "1 info"],
+      "neededItems": [
+        "2 chlazeni",
+        "2 electricity",
+        "1 info"
+      ],
       "inventory": [
         null,
         null,
@@ -75,7 +132,9 @@
       "id": "ram",
       "name": "RAM",
       "introductoryText": "Toto je ram",
-      "neededItems": ["2 electricity"],
+      "neededItems": [
+        "2 electricity"
+      ],
       "inventory": [
         null,
         null
@@ -92,7 +151,9 @@
       "id": "hdd",
       "name": "Hard disk",
       "introductoryText": "Toto je hdd",
-      "neededItems": ["1 electricity"],
+      "neededItems": [
+        "1 electricity"
+      ],
       "inventory": [
         null
       ],
@@ -108,7 +169,11 @@
       "id": "cpu",
       "name": "Procesor",
       "introductoryText": "Toto je procesor",
-      "neededItems": ["1 chlazeni", "1 electricity", "1 info"],
+      "neededItems": [
+        "1 chlazeni",
+        "1 electricity",
+        "1 info"
+      ],
       "inventory": [
         null,
         null,
@@ -126,7 +191,9 @@
       "id": "chlazeni",
       "name": "Chlazeni",
       "introductoryText": "Toto je chlazeni",
-      "neededItems": ["electricity"],
+      "neededItems": [
+        "electricity"
+      ],
       "inventory": [
         null
       ],
