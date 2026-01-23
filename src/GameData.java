@@ -12,6 +12,7 @@ import java.util.ArrayList;
  */
 public class GameData {
     private ArrayList<Location> locations;
+    private ArrayList<Item> items;
 
     /**
      * Loads game data from a JSON file.
