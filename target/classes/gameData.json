@@ -1,21 +1,4 @@
 {
-  "items": [
-    {
-      "id": "electricity",
-      "name": "Elektrina",
-      "description": "Jeho zdroj je zdroj :D, jde pouzit v skoro kazde mistnosti"
-    },
-    {
-      "id": "chlazeni",
-      "name": "Chlazeni",
-      "description": "Ziskany v chlazeni, chladi 2 dulezite komponenty"
-    },
-    {
-      "id": "info",
-      "name": "Informace",
-      "description": "Puvod ma v Ram pameti, jen ty nejdulezitejsi komponenty ho potrebuji"
-    }
-  ],
   "npcs": [
     {
       "id": "zdrojik",
@@ -114,9 +97,9 @@
         "1 info"
       ],
       "inventory": [
-        null,
-        null,
-        null,
+        "electricity",
+        "electricity",
+        "electricity",
         null,
         null
       ],
