@@ -28,6 +28,39 @@ public class Location {
         return null;
     }
 
+    /**
+     * removes item from location inventory
+     *
+     * @param item requested to remove item
+     * @return returns if the operation was successful
+     */
+    public boolean removeItem(String item) {
+        for (int i = 0; i < inventory.length; i++) {
+            if (inventory[i] != null && inventory[i].equals(item)) {
+                inventory[i] = null;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * adds item to inventory, if it can go there
+     *
+     * @param item added item
+     * @return returns if the operation was successful
+     */
+    public boolean addItem(String item) {
+        //TODO podminka jestli tam muze jit item
+        for (int i = 0; i < inventory.length; i++) {
+            if (inventory[i] == null) {
+                inventory[i] = item;
+                return true;
+            }
+        }
+        return true;
+    }
+
     public String getId() {
         return id;
     }
