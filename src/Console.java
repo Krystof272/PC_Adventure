@@ -23,6 +23,7 @@ public class Console {
      */
     public void initialization(){
         comands.put("jdi", new Move());
+        comands.put("inventory", new Inventory());
     }
 
     /**
@@ -33,14 +34,17 @@ public class Console {
         String inputCommand = sc.nextLine();
         String[] inputCommnads = inputCommand.split(" ");
 
-        if (comands.containsKey(inputCommnads[0])){
-            System.out.println(comands.get(inputCommnads[0]).execute(inputCommnads[1], player, datos));
-            isExit = comands.get(inputCommnads[0]).isExit();
+        if(inputCommnads.length > 1) {
+            if (comands.containsKey(inputCommnads[0])) {
+                System.out.println(comands.get(inputCommnads[0]).execute(inputCommnads[1], player, datos));
+                isExit = comands.get(inputCommnads[0]).isExit();
+            } else {
+                System.out.println("Tento prikaz neexistuje!");
+            }
+            System.out.println(player);
         } else {
-            System.out.println("Command not recognized");
+            System.out.println("Zadejte prikaz ve forme: prikaz + co/kam/kdo!");
         }
-
-        System.out.println(player);
     }
 
     /**
