@@ -11,8 +11,10 @@ import java.util.ArrayList;
  *
  */
 public class GameData {
-    private ArrayList<Location> locations;
     private ArrayList<Item> items;
+    private ArrayList<NPC> npcs;
+    private Bugisek bugisek;
+    private ArrayList<Location> locations;
 
     /**
      * Loads game data from a JSON file.
@@ -56,5 +58,15 @@ public class GameData {
             }
         }
         return null;
+    }
+
+    @Override
+    public String toString() {
+        return "GameData{" +
+                "items=" + items +
+                ", npcs=" + npcs +
+                ", bugisek=" + bugisek +
+                ", locations=" + locations +
+                '}';
     }
 }
