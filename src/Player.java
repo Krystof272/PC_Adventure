@@ -37,6 +37,10 @@ public class Player {
         return true;
     }
 
+    public boolean removeItem(String itemName) {
+        return inventory.remove(itemName);
+    }
+
     public String getCurrentLocationId() {
         return currentLocationId;
     }
