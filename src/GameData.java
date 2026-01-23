@@ -11,7 +11,6 @@ import java.util.ArrayList;
  *
  */
 public class GameData {
-    private ArrayList<Item> items;
     private ArrayList<NPC> npcs;
     private Bugisek bugisek;
     private ArrayList<Location> locations;
@@ -63,8 +62,7 @@ public class GameData {
     @Override
     public String toString() {
         return "GameData{" +
-                "items=" + items +
-                ", npcs=" + npcs +
+                "npcs=" + npcs +
                 ", bugisek=" + bugisek +
                 ", locations=" + locations +
                 '}';
