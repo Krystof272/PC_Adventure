@@ -1,10 +1,27 @@
 {
+  "items": [
+    {
+      "id": "electricity",
+      "name": "Elektrina",
+      "description": "Jeho zdroj je zdroj :D, jde pouzit v skoro kazde mistnosti"
+    },
+    {
+      "id": "chlazeni",
+      "name": "Chlazeni",
+      "description": "Ziskany v chlazeni, chladi 2 dulezite komponenty"
+    },
+    {
+      "id": "info",
+      "name": "Informace",
+      "description": "Puvod ma v Ram pameti, jen ty nejdulezitejsi komponenty ho potrebuji"
+    }
+  ],
   "locations": [
     {
       "id": "motherboard",
       "name": "Zakladni deska",
       "introductoryText": "Toto je zakladni deska",
-      "neededItems": [],
+      "neededItems": ["2 info"],
       "inventory": [
         null,
         null
@@ -21,7 +38,7 @@
       "id": "psu",
       "name": "Zdroj",
       "introductoryText": "Toto je zdroj",
-      "neededItems": [],
+      "neededItems": ["2 electricity"],
       "inventory": [
         null,
         null
@@ -38,7 +55,7 @@
       "id": "gpu",
       "name": "Graficka karta",
       "introductoryText": "Toto je graficka karta",
-      "neededItems": [],
+      "neededItems": ["2 chlazeni", "2 electricity", "1 info"],
       "inventory": [
         null,
         null,
@@ -58,7 +75,7 @@
       "id": "ram",
       "name": "RAM",
       "introductoryText": "Toto je ram",
-      "neededItems": [],
+      "neededItems": ["2 electricity"],
       "inventory": [
         null,
         null
@@ -75,7 +92,7 @@
       "id": "hdd",
       "name": "Hard disk",
       "introductoryText": "Toto je hdd",
-      "neededItems": [],
+      "neededItems": ["1 electricity"],
       "inventory": [
         null
       ],
@@ -91,7 +108,7 @@
       "id": "cpu",
       "name": "Procesor",
       "introductoryText": "Toto je procesor",
-      "neededItems": [],
+      "neededItems": ["1 chlazeni", "1 electricity", "1 info"],
       "inventory": [
         null,
         null,
@@ -109,7 +126,7 @@
       "id": "chlazeni",
       "name": "Chlazeni",
       "introductoryText": "Toto je chlazeni",
-      "neededItems": [],
+      "neededItems": ["electricity"],
       "inventory": [
         null
       ],
