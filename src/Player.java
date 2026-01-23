@@ -22,6 +22,21 @@ public class Player {
         return inventory.contains(itemName);
     }
 
+    /**
+     * adds item to player inventory, if the inventory is not full
+     *
+     * @param itemName added item
+     * @return returns if the action was successful
+     */
+    public boolean addItem(String itemName) {
+        inventory.add(itemName);
+        if (inventory.size() > maxInventorySize) {
+            inventory.remove(itemName);
+            return false;
+        }
+        return true;
+    }
+
     public String getCurrentLocationId() {
         return currentLocationId;
     }
@@ -42,8 +57,8 @@ public class Player {
         this.currentTalkingNPC = currentTalkingNPC;
     }
 
-    public ArrayList<String> getInventory() {
-        return inventory;
+    public String getInventory() {
+        return inventory.toString();
     }
 
     @Override
