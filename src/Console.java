@@ -30,6 +30,7 @@ public class Console {
      * console output and input command loader, input command analyzer
      */
     public void execute(){
+        System.out.println(datos);
         System.out.print(">> ");
         String inputCommand = sc.nextLine();
         String[] inputCommnads = inputCommand.split(" ");
