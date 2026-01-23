@@ -3,5 +3,12 @@ public class Item {
     private String name;
     private String description;
 
-
+    @Override
+    public String toString() {
+        return "\nItem{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
