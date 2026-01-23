@@ -25,6 +25,7 @@ public class Console {
         comands.put("jdi", new Move());
         comands.put("inventory", new Inventory());
         comands.put("seber", new Pick_up());
+        comands.put("pouzij", new Use());
     }
 
     /**
