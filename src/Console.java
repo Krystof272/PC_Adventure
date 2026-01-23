@@ -24,13 +24,13 @@ public class Console {
     public void initialization(){
         comands.put("jdi", new Move());
         comands.put("inventory", new Inventory());
+        comands.put("seber", new Pick_up());
     }
 
     /**
      * console output and input command loader, input command analyzer
      */
     public void execute(){
-        System.out.println(datos);
         System.out.print(">> ");
         String inputCommand = sc.nextLine();
         String[] inputCommnads = inputCommand.split(" ");
@@ -42,6 +42,7 @@ public class Console {
             } else {
                 System.out.println("Tento prikaz neexistuje!");
             }
+            System.out.println(datos.getLocation("gpu"));
             System.out.println(player);
         } else {
             System.out.println("Zadejte prikaz ve forme: prikaz + co/kam/kdo!");
