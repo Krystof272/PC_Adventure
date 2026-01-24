@@ -7,6 +7,22 @@ public class NPC {
     private String initialEncouterText;
     private HashMap<String, String> answers;
 
+    public String getAnswer(String questionInt) {
+        return answers.get(questionInt);
+    }
+
+    public String getInitialEncouterText() {
+        return initialEncouterText;
+    }
+
+    public String getHomeLocationId() {
+        return homeLocationId;
+    }
+
+    public String getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return "\nNPC{" +
