@@ -59,6 +59,10 @@ public class GameData {
         return null;
     }
 
+    public ArrayList<Location> getLocationList() {
+        return locations;
+    }
+
     /**
      *
      * @param id of the wanted npc
