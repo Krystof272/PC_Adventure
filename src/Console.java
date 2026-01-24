@@ -35,7 +35,7 @@ public class Console {
      * console output and input command loader, input command analyzer
      */
     public void execute(){
-        System.out.println(datos.getLocation("gpu"));
+        System.out.println(datos.getLocation(player.getCurrentLocationId()));
         System.out.println(player);
 
         System.out.print(">> ");
@@ -46,12 +46,14 @@ public class Console {
             if (comands.containsKey(inputCommnads[0])) {
                 System.out.println(comands.get(inputCommnads[0]).execute(inputCommnads[1], player, datos));
                 isExit = comands.get(inputCommnads[0]).isExit();
+
+                gameMechanics(inputCommnads[1]);
             } else {
-                System.out.println("Tento prikaz neexistuje!");
+                System.out.println("Tento prikaz neexistuje, tato hra podporuje tyto prikazy: "+ comands.get("pomoc").execute("hrac", player, datos));
             }
 
         } else {
-            System.out.println("Zadejte prikaz ve forme: prikaz + co/kam/kdo!");
+            System.out.println("Zadejte prikaz ve forme: prikaz + co/kam/kdo!\nTato hra podporuje tyto prikazy: "+ comands.get("pomoc").execute("hrac", player, datos));
         }
     }
 
@@ -61,8 +63,52 @@ public class Console {
     public void start(){
         initialization();
         //TODO nacitani jmena hrace z konzole
+        System.out.println("V teto hre se pouzivaji tyto prikazy: "+ comands.get("pomoc").execute("hrac", player, datos));
         do{
             execute();
         } while (!isExit);
+    }
+
+    /**
+     * this class does 3 mechanics:
+     * 1) checks if the user requested electricity to psu
+     * 2) converts electricity to information in chlazeni and electricity to information in ram
+     * 3) checks if the user requested to turn on the computer and evaluates if it can do that
+     *
+     * @param input from user
+     */
+    public void gameMechanics(String input) {
+        if (input.equals("2") && player.getCurrentTalkingNPC().equals("zakladacek")) {
+            datos.getLocation("psu").addItem("elektrina");
+        }
+
+
+        Location chlazeni = datos.getLocation("chlazeni");
+        if (chlazeni.containsItem("elektrina")) {
+            chlazeni.removeItem("elektrina");
+            chlazeni.addItem("chlazeni");
+        }
+
+        Location ram = datos.getLocation("ram");
+        if (ram.containsItem("elektrina")) {
+            ram.removeItem("elektrina");
+            ram.addItem("informace");
+        }
+
+        if (input.equals("3") && player.getCurrentTalkingNPC().equals("zakladacek")) {
+            boolean allTurnedOn = true;
+            for (Location l : datos.getLocationList()) {
+                if (!l.isTurnedOn()) {
+                    allTurnedOn = false;
+                    break;
+                }
+            }
+            if (allTurnedOn) {
+                isExit = true;
+            } else {
+                //TODO vypis nezapnutych komponent
+                System.out.println("Nezapnuto!");
+            }
+        }
     }
 }
