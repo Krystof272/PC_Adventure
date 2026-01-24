@@ -45,10 +45,11 @@ public class Location {
     }
 
     /**
-     * adds item to inventory, if it can go there
+     * adds item to inventory, if it is in the filter neededItems and the number of
+     * that item isn't over limit
      *
      * @param item added item
-     * @return returns if the operation was successful
+     * @return returns if the operation was successful, or there were any problems
      */
     public String addItem(String item) {
         if (neededItems.get(item) != null) {
