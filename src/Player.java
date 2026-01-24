@@ -17,7 +17,7 @@ public class Player {
         this.inventory = new ArrayList<>(Arrays.asList("elektrina","elektrina","elektrina", "chlazeni", "informace"));
         this.maxInventorySize = 5;
         this.currentLocationId = "motherboard";
-        this.currentTalkingNPC = null;
+        this.currentTalkingNPC = "";
     }
 
     public boolean isInInventory(String itemName) {
