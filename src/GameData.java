@@ -59,6 +59,20 @@ public class GameData {
         return null;
     }
 
+    /**
+     *
+     * @param id of the wanted npc
+     * @return returns null if the npc wasn't found or returns the wanted npc
+     */
+    public NPC getNPC(String id) {
+        for (NPC npc : npcs) {
+            if (npc.getId().equals(id)) {
+                return npc;
+            }
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         return "GameData{" +
