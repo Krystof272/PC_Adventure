@@ -27,6 +27,8 @@ public class Console {
         comands.put("seber", new Pick_up());
         comands.put("pouzij", new Use());
         comands.put("pomoc", new Help());
+        comands.put("mluv", new Speak());
+        comands.put("odpoved", new Answer());
     }
 
     /**
