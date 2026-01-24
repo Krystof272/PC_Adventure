@@ -9,7 +9,7 @@ public class Location {
     private String id;
     private String name;
     private String introductoryText;
-    private ArrayList<String> neededItems;
+    private HashMap<String, Integer> neededItems;
     private String[] inventory;
     private boolean turnedOn;
     private HashMap<String, String> neighbours;
@@ -50,15 +50,26 @@ public class Location {
      * @param item added item
      * @return returns if the operation was successful
      */
-    public boolean addItem(String item) {
-        //TODO podminka jestli tam muze jit item
-        for (int i = 0; i < inventory.length; i++) {
-            if (inventory[i] == null) {
-                inventory[i] = item;
-                return true;
+    public String addItem(String item) {
+        if (neededItems.get(item) != null) {
+            int currentCount = 0;
+            for (String i : inventory) {
+                if (i != null && i.equals(item)) {
+                    currentCount++;
+                }
             }
+
+            if (neededItems.get(item) > currentCount) {
+                for (int i = 0; i < inventory.length; i++) {
+                    if (inventory[i] == null) {
+                        inventory[i] = item;
+                        return "pridan";
+                    }
+                }
+            }
+            return "nepridan";
         }
-        return true;
+        return "nepatri";
     }
 
     public String getId() {
