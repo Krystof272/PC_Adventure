@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * this class creates player
@@ -12,8 +13,9 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
-        this.inventory = new ArrayList<>();
-        this.maxInventorySize = 2;
+        //TODO zmenit zpatky na normal
+        this.inventory = new ArrayList<>(Arrays.asList("elektrina","elektrina","elektrina", "chlazeni", "informace"));
+        this.maxInventorySize = 5;
         this.currentLocationId = "motherboard";
         this.currentTalkingNPC = null;
     }
