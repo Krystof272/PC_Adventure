@@ -20,7 +20,7 @@ public class Move implements Command {
             return "Tam jit nemuzes!";
         }
         player.setCurrentLocationId(neighbour);
-        player.setCurrentTalkingNPC(null);
+        player.setCurrentTalkingNPC("");
 
         return datos.getLocation(neighbour).getIntroductoryText();
     }
