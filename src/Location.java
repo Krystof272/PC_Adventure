@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -38,6 +37,7 @@ public class Location {
         for (int i = 0; i < inventory.length; i++) {
             if (inventory[i] != null && inventory[i].equals(item)) {
                 inventory[i] = null;
+                turnedOn = false;
                 return true;
             }
         }
@@ -64,6 +64,9 @@ public class Location {
                 for (int i = 0; i < inventory.length; i++) {
                     if (inventory[i] == null) {
                         inventory[i] = item;
+                        if (isFull()){
+                            turnedOn = true;
+                        }
                         return "pridan";
                     }
                 }
@@ -73,12 +76,45 @@ public class Location {
         return "nepatri";
     }
 
+    /**
+     * checks if the wanted item is there
+     *
+     * @param item checked item
+     * @return returns if the item is there
+     */
+    public boolean containsItem(String item) {
+        for (int i = 0; i < inventory.length; i++) {
+            if (inventory[i] != null && inventory[i].equals(item)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * checks if the location is full
+     *
+     * @return returns if the inventory of the location is full
+     */
+    public boolean isFull() {
+        for (int i = 0; i < inventory.length; i++) {
+            if (inventory[i] == null) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public String getId() {
         return id;
     }
 
     public String getIntroductoryText() {
         return introductoryText;
+    }
+
+    public boolean isTurnedOn() {
+        return turnedOn;
     }
 
     @Override
