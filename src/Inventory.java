@@ -5,10 +5,10 @@ public class Inventory implements Command {
 
     @Override
     public String execute(String command, Player player, GameData datos) {
-        if (command.equals("player")) {
+        if (command.equals("hrac")) {
             return player.getInventory();
         }
-        return "Pouzij: inventory + <player>!";
+        return "Pouzij: inventory <hrac>!";
     }
 
     @Override
