@@ -53,9 +53,9 @@
       "id": "motherboard",
       "name": "Zakladni deska",
       "introductoryText": "Toto je zakladni deska",
-      "neededItems": [
-        "2 info"
-      ],
+      "neededItems": {
+        "informace": "2"
+      },
       "inventory": [
         null,
         null
@@ -72,9 +72,9 @@
       "id": "psu",
       "name": "Zdroj",
       "introductoryText": "Toto je zdroj",
-      "neededItems": [
-        "2 electricity"
-      ],
+      "neededItems": {
+        "elektrina": "2"
+      },
       "inventory": [
         null,
         null
@@ -91,15 +91,15 @@
       "id": "gpu",
       "name": "Graficka karta",
       "introductoryText": "Toto je graficka karta",
-      "neededItems": [
-        "2 chlazeni",
-        "2 electricity",
-        "1 info"
-      ],
+      "neededItems": {
+        "chlazeni": "2",
+        "elektrina": "2",
+        "informace": "1"
+      },
       "inventory": [
-        "electricity",
-        "electricity",
-        "electricity",
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -115,11 +115,10 @@
       "id": "ram",
       "name": "RAM",
       "introductoryText": "Toto je ram",
-      "neededItems": [
-        "2 electricity"
-      ],
+      "neededItems": {
+        "elektrina": 1
+      },
       "inventory": [
-        null,
         null
       ],
       "turnedOn": true,
@@ -134,9 +133,9 @@
       "id": "hdd",
       "name": "Hard disk",
       "introductoryText": "Toto je hdd",
-      "neededItems": [
-        "1 electricity"
-      ],
+      "neededItems": {
+        "elektrina": 1
+      },
       "inventory": [
         null
       ],
@@ -152,11 +151,11 @@
       "id": "cpu",
       "name": "Procesor",
       "introductoryText": "Toto je procesor",
-      "neededItems": [
-        "1 chlazeni",
-        "1 electricity",
-        "1 info"
-      ],
+      "neededItems": {
+        "chlazeni": 1,
+        "elektrina": 1,
+        "informace": 1
+      },
       "inventory": [
         null,
         null,
@@ -174,9 +173,9 @@
       "id": "chlazeni",
       "name": "Chlazeni",
       "introductoryText": "Toto je chlazeni",
-      "neededItems": [
-        "electricity"
-      ],
+      "neededItems": {
+        "elektrina": 1
+      },
       "inventory": [
         null
       ],
