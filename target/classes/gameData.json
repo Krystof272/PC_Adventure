@@ -7,7 +7,7 @@
       "initialEncouterText": "Ja jsem zdrojik",
       "answers": {
         "1": "ne",
-        "2": "ano,",
+        "2": "ano",
         "3": "mozna"
       }
     },
@@ -18,7 +18,7 @@
       "initialEncouterText": "Ja jsem chladik",
       "answers": {
         "1": "ne",
-        "2": "ano,",
+        "2": "ano",
         "3": "mozna"
       }
     },
@@ -29,7 +29,7 @@
       "initialEncouterText": "Ja jsem zakladacek",
       "answers": {
         "1": "ne",
-        "2": "ano,",
+        "2": "ano",
         "3": "mozna"
       }
     },
@@ -40,7 +40,7 @@
       "initialEncouterText": "Ja jsem ramicek",
       "answers": {
         "1": "ne",
-        "2": "ano,",
+        "2": "ano",
         "3": "mozna"
       }
     }
