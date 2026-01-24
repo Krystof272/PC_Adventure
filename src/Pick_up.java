@@ -21,7 +21,7 @@ public class Pick_up implements Command {
                 return "Mas plny inventar!";
             }
         }
-        return "Item nenalezen.";
+        return "Item nenalezen v lokaci.";
     }
 
     @Override
