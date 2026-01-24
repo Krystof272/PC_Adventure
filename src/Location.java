@@ -83,8 +83,8 @@ public class Location {
      * @return returns if the item is there
      */
     public boolean containsItem(String item) {
-        for (int i = 0; i < inventory.length; i++) {
-            if (inventory[i] != null && inventory[i].equals(item)) {
+        for (String s : inventory) {
+            if (s != null && s.equals(item)) {
                 return true;
             }
         }
@@ -97,8 +97,8 @@ public class Location {
      * @return returns if the inventory of the location is full
      */
     public boolean isFull() {
-        for (int i = 0; i < inventory.length; i++) {
-            if (inventory[i] == null) {
+        for (String s : inventory) {
+            if (s == null) {
                 return false;
             }
         }

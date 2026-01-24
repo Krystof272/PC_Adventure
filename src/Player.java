@@ -20,10 +20,6 @@ public class Player {
         this.currentTalkingNPC = "";
     }
 
-    public boolean isInInventory(String itemName) {
-        return inventory.contains(itemName);
-    }
-
     /**
      * adds item to player inventory, if the inventory is not full
      *
