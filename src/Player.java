@@ -63,6 +63,11 @@ public class Player {
         return inventory.toString();
     }
 
+    public boolean clearInventory() {
+        inventory.clear();
+        return true;
+    }
+
     @Override
     public String toString() {
         return "Player{" +
