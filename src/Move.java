@@ -2,6 +2,11 @@
  * this class moves the player
  */
 public class Move implements Command {
+    Bugisek bugisek;
+
+    public Move(Bugisek bugisek) {
+        this.bugisek = bugisek;
+    }
 
     /**
      * moves the player, if the locations are linked and the location exists
@@ -19,6 +24,12 @@ public class Move implements Command {
         } else if (neighbour.isEmpty()) {
             return "Tam jit nemuzes!";
         }
+
+        if (bugisek.meetWithPlayer(player.getCurrentLocationId(), neighbour)) {
+            player.clearInventory();
+            System.out.println("Potkal jsi se s Bugiskem, tvuj inventar byl vymazan. Priste se mu zkus vyhnout!");
+        }
+
         player.setCurrentLocationId(neighbour);
         player.setCurrentTalkingNPC("");
 
