@@ -63,6 +63,10 @@ public class Player {
         return inventory.toString();
     }
 
+    public void setMaxInventorySize(int maxInventorySize) {
+        this.maxInventorySize = maxInventorySize;
+    }
+
     public boolean clearInventory() {
         inventory.clear();
         return true;
