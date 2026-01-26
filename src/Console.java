@@ -83,6 +83,7 @@ public class Console {
      * 1) checks if the user requested electricity to psu
      * 2) converts electricity to information in chlazeni and electricity to information in ram
      * 3) checks if the user requested to turn on the computer and evaluates if it can do that
+     * 4) if hdd inventory is full, player inventory size increases
      *
      * @param input from user
      */
@@ -118,6 +119,10 @@ public class Console {
                 //TODO vypis nezapnutych komponent
                 System.out.println("Nezapnuto!");
             }
+        }
+
+        if (datos.getLocation("hdd").isFull()){
+            player.setMaxInventorySize(4);
         }
     }
 }
