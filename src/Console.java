@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -8,21 +9,26 @@ public class Console {
     private HashMap<String, Command> comands;
     private boolean isExit;
     private Scanner sc;
+    private Random rnd;
     private GameData datos = GameData.loadGameDataFromResources("/gameData.json");
     private Player player;
+    private Bugisek bugisek;
+
 
     public Console() {
         this.comands = new HashMap<>();
         this.isExit = false;
         this.sc = new Scanner(System.in);
+        this.rnd = new Random();
         this.player = new Player("Player");
+        this.bugisek = new Bugisek();
     }
 
     /**
      * adds commands to hashmap
      */
     public void initialization(){
-        comands.put("jdi", new Move());
+        comands.put("jdi", new Move(bugisek));
         comands.put("inventar", new Inventory());
         comands.put("seber", new Pick_up());
         comands.put("pouzij", new Use());
@@ -35,8 +41,11 @@ public class Console {
      * console output and input command loader, input command analyzer
      */
     public void execute(){
+        bugisek.move(datos);
+
         System.out.println(datos.getLocation(player.getCurrentLocationId()));
         System.out.println(player);
+        System.out.println(bugisek);
 
         System.out.print(">> ");
         String inputCommand = sc.nextLine();
