@@ -4,10 +4,10 @@
       "id": "zdrojik",
       "name": "Zdrojik",
       "homeLocationId": "psu",
-      "initialEncouterText": "Ja jsem zdrojik",
+      "initialEncouterText": "Ja jsem Zdrojik, pokud je potreba vydam ti elektrinu!\n1) Potrebuji elektrinu.\n2) Co s ni mam delat?",
       "answers": {
-        "1": "ne",
-        "2": "ano",
+        "1": "Tim padem, musis jit do Zakladni desky a vyzadat elektrinu tam, ona se potom objevi zde.",
+        "2": "Elektrina je potreba vsude, zkus se trochu porozhlednout a sam to zjistis.",
         "3": "mozna"
       }
     },
@@ -15,10 +15,10 @@
       "id": "chladik",
       "name": "Chladik",
       "homeLocationId": "chlazeni",
-      "initialEncouterText": "Ja jsem chladik",
+      "initialEncouterText": "Ja jsem chladik, rad poskytnu chlazeni ale zadarmo to nebude!\n1) Jak ziskam chlazeni?\n2) Kde muzu pouzit chlazeni?",
       "answers": {
-        "1": "ne",
-        "2": "ano",
+        "1": "Vloz do teto lokace elektrinu a ja ji premenim na chlazeni.",
+        "2": "Muzes ho pouzit obzvlaste v mistnostech, ktere potrebuji spoustu elektriny (Cpu, Gpu).",
         "3": "mozna"
       }
     },
@@ -29,7 +29,7 @@
       "initialEncouterText": "Ja jsem zakladacek, pokud chces pomoct, nebo napovedu, neboj se zeptat!\n1) co mam delat?\n2) Vyzadat elektrinu ve Zdroji\n3) zapni pocitac",
       "answers": {
         "1": "Tvym ukolem je zprovoznit pocitac. To udelas prenasenim predmetu do komponent, ktere je vyzaduji na zapnuti.\nDoporocuju jako prvni, vyzadat si elektrinu ve zdroji a jit tam.",
-        "2": "1 elektrina se objevila ve Zdroji",
+        "2": "1 elektrina se objevila ve Zdroji!",
         "3": "Zkousim zapnout pocitac!"
       }
     },
@@ -37,10 +37,10 @@
       "id": "ramicek",
       "name": "Ramicek",
       "homeLocationId": "ram",
-      "initialEncouterText": "Ja jsem ramicek",
+      "initialEncouterText": "Ja jsem Ramicek, vymenim elektrinu za informaci, staci mziknout!\n1) Kam mam dat elektrinu?\n2) Kde ziskam elektrinu?",
       "answers": {
-        "1": "ne",
-        "2": "ano",
+        "1": "Vloz ji do lokace a hned se tam objevi informace,",
+        "2": "Vyzadej si ji v Zakladni desce a potom ji seber ve zdroji.",
         "3": "mozna"
       }
     }
@@ -52,7 +52,7 @@
     {
       "id": "motherboard",
       "name": "Zakladni deska",
-      "introductoryText": "Toto je zakladni deska",
+      "introductoryText": "Zde se vsechny komponenty propojuji. Zije zde Zakladacek pomuze ti se ze zacatku zorientovat. (Zakladni deska)",
       "neededItems": {
         "informace": "2"
       },
@@ -71,7 +71,7 @@
     {
       "id": "psu",
       "name": "Zdroj",
-      "introductoryText": "Toto je zdroj",
+      "introductoryText": "Odtud se rozvadi vsechna elektrina ze zasuvky do ostatnich komponentu. (Psu)",
       "neededItems": {
         "elektrina": "2"
       },
@@ -90,7 +90,7 @@
     {
       "id": "gpu",
       "name": "Graficka karta",
-      "introductoryText": "Toto je graficka karta",
+      "introductoryText": "Tento komponent zodpovida za obraz a je neskutecne hladovy. (Gpu)",
       "neededItems": {
         "chlazeni": "2",
         "elektrina": "2",
@@ -114,7 +114,7 @@
     {
       "id": "ram",
       "name": "RAM",
-      "introductoryText": "Toto je ram",
+      "introductoryText": "Zde se ukladaji vsechny docasne informace. Zije zde ramicek ale jen docasne... hihi :D (Ram)",
       "neededItems": {
         "elektrina": 1,
         "informace": 1
@@ -133,7 +133,7 @@
     {
       "id": "hdd",
       "name": "Hard disk",
-      "introductoryText": "Toto je hdd",
+      "introductoryText": "Zde se ukladaji vsechny informace. (Hdd)",
       "neededItems": {
         "elektrina": 1
       },
@@ -151,7 +151,7 @@
     {
       "id": "cpu",
       "name": "Procesor",
-      "introductoryText": "Toto je procesor",
+      "introductoryText": "Tento komponent rozhoduje o chodu celeho pocitace. (Cpu)",
       "neededItems": {
         "chlazeni": 1,
         "elektrina": 1,
@@ -173,7 +173,7 @@
     {
       "id": "chlazeni",
       "name": "Chlazeni",
-      "introductoryText": "Toto je chlazeni",
+      "introductoryText": "V teto mistnosti je hrozna zima, diky bohu vzdyt chladi cely pocitac. Zije zde postava Chladik, zeptej se ji na dalsi informace.",
       "neededItems": {
         "elektrina": 2,
         "chlazeni": 2
