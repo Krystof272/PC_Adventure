@@ -28,10 +28,6 @@ public class Bugisek {
         return false;
     }
 
-    public String[] getLocation() {
-        return location;
-    }
-
     /**
      * this method moves bugisek, it assignees second location to first and first location to seconds locations neighbour
      *
