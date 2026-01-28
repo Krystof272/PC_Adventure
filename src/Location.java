@@ -109,6 +109,10 @@ public class Location {
         return id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public String getIntroductoryText() {
         return introductoryText;
     }
