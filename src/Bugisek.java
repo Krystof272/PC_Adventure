@@ -36,11 +36,7 @@ public class Bugisek {
      */
     public boolean move(GameData datos) {
         Random rnd = new Random();
-        String[] directions = new String[4];
-        directions[0] = "sever";
-        directions[1] = "jih";
-        directions[2] = "vychod";
-        directions[3] = "zapad";
+        String[] directions = {"sever", "jih", "vychod", "zapad"};
 
         location[1] = location[0];
         do {
