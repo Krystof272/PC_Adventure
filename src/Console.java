@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
@@ -51,9 +52,10 @@ public class Console {
         String inputCommand = sc.nextLine();
         String[] inputCommnads = inputCommand.split(" ");
 
+
         if(inputCommnads.length > 1) {
             if (comands.containsKey(inputCommnads[0])) {
-                System.out.println(comands.get(inputCommnads[0]).execute(inputCommnads[1], player, datos));
+                System.out.println(comands.get(inputCommnads[0]).execute(inputCommnads[1].toLowerCase(), player, datos));
                 isExit = comands.get(inputCommnads[0]).isExit();
 
                 gameMechanics(inputCommnads[1]);
@@ -107,17 +109,17 @@ public class Console {
 
         if (input.equals("3") && player.getCurrentTalkingNPC().equals("zakladacek")) {
             boolean allTurnedOn = true;
+            ArrayList<String> notTurnedOn = new ArrayList<>();
             for (Location l : datos.getLocationList()) {
                 if (!l.isTurnedOn()) {
                     allTurnedOn = false;
-                    break;
+                    notTurnedOn.add(l.getName());
                 }
             }
             if (allTurnedOn) {
                 isExit = true;
             } else {
-                //TODO vypis nezapnutych komponent
-                System.out.println("Nezapnuto!");
+                System.out.println("Zapnuti selhalo, tyto komponenty nemaji dostatek zdroju: "+ notTurnedOn);
             }
         }
 
