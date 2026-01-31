@@ -154,6 +154,6 @@ public class Location {
 
     @Override
     public String toString() {
-        return name + ": inventar " + Arrays.toString(inventory) + ", potrebne predmety " + neededItemsText() + ", komponent " + turnedOnText();
+        return "Jsi v mistnosti " + name + ": inventar " + Arrays.toString(inventory) + ", potrebne predmety " + neededItemsText() + ", komponent " + turnedOnText();
     }
 }
