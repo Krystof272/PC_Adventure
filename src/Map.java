@@ -1,0 +1,31 @@
+/**
+ * returns map of the game
+ */
+public class Map implements Command {
+    @Override
+    public String execute(String command, Player player, GameData datos) {
+        return """
+                           +----------+
+                           | Chlazení |
+                           +----------+
+                                |
+                           +----------+
+                    +------|    CPU   |
+                    |      +----------+
+                    |           |
+                +-------+  +----------+     +-------+
+                | Zdroj |--| Základní |-----|  RAM  |
+                +-------+  |   deska  |     +-------+
+                    |      +----------+
+                    |         |
+                    |      +-----+  +-----+
+                    +------| GPU |--| HDD |
+                           +-----+  +-----+
+                """;
+    }
+
+    @Override
+    public boolean isExit() {
+        return false;
+    }
+}
