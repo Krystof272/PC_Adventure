@@ -38,6 +38,7 @@ public class Console {
         comands.put("pomoc", new Help());
         comands.put("mluv", new Speak());
         comands.put("odpoved", new Answer());
+        comands.put("mapa", new Map());
 
         usedCommands.put("jdi", 0);
         usedCommands.put("inventar", 0);
@@ -46,6 +47,7 @@ public class Console {
         usedCommands.put("pomoc", 0);
         usedCommands.put("mluv", 0);
         usedCommands.put("odpoved", 0);
+        usedCommands.put("mapa", 0);
     }
 
     /**
@@ -55,6 +57,8 @@ public class Console {
         bugisek.move(datos);
 
         System.out.println("\n" + datos.getLocation(player.getCurrentLocationId()));
+        System.out.println(bugisek);
+
 
         System.out.print(">> ");
         String inputCommand = sc.nextLine();
@@ -92,11 +96,17 @@ public class Console {
                 v nějakém komponentu, po chvílí rozhlížení usoudíte že je to nejspíš základní deska, kvůli tomu množství připojení
                 všude možně. Chvílí se kocháte tím novým pohledem, procházíte křížem krážem je to vskutku úchvatné. Po nějaké době
                 vám ale dojde, že nevíte, jak se dostat zpět.
+                (Enter = dalsi text)
                 """);
+        sc.nextLine();
+        System.out.println(comands.get("mapa").execute("mapa", player, datos));
         System.out.println("Pro zobrazeni vsech prikazu zadejte: pomoc <hrac>\nJako prvni doporucuji promluvit si se Zakladackem!");
+        sc.nextLine();
+
         do {
             execute();
         } while (!isExit);
+
         System.out.println("""
                 Povedlo se!!! Pocitac se zapnul, nabiha windows a ty se pres monitor skrz hdmi kabel vracis zpet do
                 normalni sveta!
