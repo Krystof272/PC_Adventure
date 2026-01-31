@@ -13,9 +13,8 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
-        //TODO zmenit zpatky na normal
-        this.inventory = new ArrayList<>(Arrays.asList("elektrina","elektrina","elektrina", "chlazeni", "informace"));
-        this.maxInventorySize = 5;
+        this.inventory = new ArrayList<>();
+        this.maxInventorySize = 2;
         this.currentLocationId = "motherboard";
         this.currentTalkingNPC = "";
     }
