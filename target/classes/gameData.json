@@ -26,7 +26,7 @@
       "id": "zakladacek",
       "name": "Zakladacek",
       "homeLocationId": "motherboard",
-      "initialEncouterText": "Ja jsem zakladacek, pokud chces pomoct, nebo napovedu, neboj se zeptat!\n1) co mam delat?\n2) Vyzadat elektrinu ve Zdroji\n3) zapni pocitac",
+      "initialEncouterText": "Ja jsem zakladacek, pokud chces pomoct, nebo napovedu, neboj se zeptat!\n1) Jak se dostanu zpet?\n2) Vyzadat elektrinu ve Zdroji\n3) zapni pocitac",
       "answers": {
         "1": "Tvym ukolem je zprovoznit pocitac. To udelas prenasenim predmetu do komponent, ktere je vyzaduji na zapnuti.\nDoporocuju jako prvni, vyzadat si elektrinu ve zdroji a jit tam.",
         "2": "1 elektrina se objevila ve Zdroji!",
@@ -60,7 +60,7 @@
         null,
         null
       ],
-      "turnedOn": false,
+      "turnedOn": true,
       "neighbours": {
         "sever": "cpu",
         "jih": "gpu",
@@ -79,7 +79,7 @@
         null,
         null
       ],
-      "turnedOn": false,
+      "turnedOn": true,
       "neighbours": {
         "sever": "cpu",
         "jih": "gpu",
@@ -103,7 +103,7 @@
         null,
         null
       ],
-      "turnedOn": false,
+      "turnedOn": true,
       "neighbours": {
         "sever": "motherboard",
         "jih": "",
@@ -122,7 +122,7 @@
       "inventory": [
         null
       ],
-      "turnedOn": false,
+      "turnedOn": true,
       "neighbours": {
         "sever": "",
         "jih": "",
@@ -140,7 +140,7 @@
       "inventory": [
         null
       ],
-      "turnedOn": false,
+      "turnedOn": true,
       "neighbours": {
         "sever": "",
         "jih": "",
@@ -162,7 +162,7 @@
         null,
         null
       ],
-      "turnedOn": false,
+      "turnedOn": true,
       "neighbours": {
         "sever": "chlazeni",
         "jih": "motherboard",
@@ -182,7 +182,7 @@
         null,
         null
       ],
-      "turnedOn": false,
+      "turnedOn": true,
       "neighbours": {
         "sever": "",
         "jih": "cpu",
