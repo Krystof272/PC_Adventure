@@ -15,6 +15,7 @@ public class Console {
     private Player player;
     private Bugisek bugisek;
     private HashMap<String, Integer> usedCommands;
+    private String previusCommand;
 
     public Console() {
         this.comands = new HashMap<>();
@@ -25,6 +26,7 @@ public class Console {
         this.player = new Player(sc.nextLine());
         this.bugisek = new Bugisek();
         this.usedCommands = new HashMap<>();
+        this.previusCommand = "";
     }
 
     /**
@@ -62,6 +64,14 @@ public class Console {
 
         System.out.print(">> ");
         String inputCommand = sc.nextLine();
+
+        if (inputCommand.equals("n")) {
+            inputCommand = previusCommand;
+        } else if (inputCommand.equals(previusCommand)) {
+            System.out.println("Zadej: <n> pro zopakovani prikazu :)");
+        }
+        previusCommand = inputCommand;
+        System.out.println();
         String[] inputCommnads = inputCommand.split(" ");
 
 
@@ -129,8 +139,9 @@ public class Console {
             ram.addItem("informace");
         }
 
-        if (datos.getLocation("hdd").isFull()) {
+        if (datos.getLocation("hdd").isFull() && player.getMaxInventorySize() != 4) {
             player.setMaxInventorySize(4);
+            System.out.println("Zvysen inventar na 4 predmety!");
         }
     }
 
