@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -10,7 +9,6 @@ public class Console {
     private HashMap<String, Command> comands;
     private boolean isExit;
     private Scanner sc;
-    private Random rnd;
     private GameData datos = GameData.loadGameDataFromResources("/gameData.json");
     private Player player;
     private Bugisek bugisek;
@@ -21,7 +19,6 @@ public class Console {
         this.comands = new HashMap<>();
         this.isExit = false;
         this.sc = new Scanner(System.in);
-        this.rnd = new Random();
         System.out.print("Zadej svoje jmeno: ");
         this.player = new Player(sc.nextLine());
         this.bugisek = new Bugisek();
