@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -47,8 +46,6 @@ public class Bugisek {
 
     @Override
     public String toString() {
-        return "Bugisek{" +
-                "location=" + Arrays.toString(location) +
-                '}';
+        return "Bugisek je mezi " + location[0] + " a " + location[1] + "!";
     }
 }
