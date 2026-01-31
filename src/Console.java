@@ -107,13 +107,8 @@ public class Console {
             execute();
         } while (!isExit);
 
-        System.out.println("""
-                Povedlo se!!! Pocitac se zapnul, nabiha windows a ty se pres monitor skrz hdmi kabel vracis zpet do
-                normalni sveta!
-                
-                                                    Dekuji za hrani me hry!!!
-                
-                """);
+        System.out.println("Povedlo se!!! Pocitac se zapnul, nabiha windows a ty se pres monitor skrz hdmi kabel vracis zpet" +
+                " do normalni sveta!\n\n                        Dekuji za hrani me hry " + player.getName() + "!!!\n");
         System.out.println("Pouzite prikazy: " + usedCommandsText());
     }
 
