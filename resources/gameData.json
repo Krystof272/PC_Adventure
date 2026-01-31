@@ -73,9 +73,11 @@
       "name": "Zdroj",
       "introductoryText": "Odtud se rozvadi vsechna elektrina ze zasuvky do ostatnich komponentu. (Psu)",
       "neededItems": {
-        "elektrina": "2"
+        "elektrina": "4"
       },
       "inventory": [
+        null,
+        null,
         null,
         null
       ],
