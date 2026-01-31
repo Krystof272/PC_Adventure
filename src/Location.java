@@ -1,3 +1,4 @@
+import java.security.Key;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -64,7 +65,7 @@ public class Location {
                 for (int i = 0; i < inventory.length; i++) {
                     if (inventory[i] == null) {
                         inventory[i] = item;
-                        if (isFull()){
+                        if (isFull()) {
                             turnedOn = true;
                         }
                         return "pridan";
@@ -121,16 +122,38 @@ public class Location {
         return turnedOn;
     }
 
+    /**
+     * @return returns text zapnut or vypnut depending on boolean turnedOn
+     */
+    public String turnedOnText() {
+        if (turnedOn) {
+            return "zapnut";
+        }
+        return "vypnut";
+    }
+
+    /**
+     *
+     * @return returns toString of neededItems
+     */
+    public String neededItemsText() {
+        String text = "[";
+        int i = 0;
+        for (String s : neededItems.keySet()) {
+            i++;
+            if (i == neededItems.size()) {
+                text += s + " " + neededItems.get(s);
+            } else {
+                text += s + " " + neededItems.get(s) + ", ";
+            }
+
+        }
+
+        return text + "]";
+    }
+
     @Override
     public String toString() {
-        return "\nLocation{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", introductoryText='" + introductoryText + '\'' +
-                ", neededItems=" + neededItems +
-                ", inventory=" + Arrays.toString(inventory) +
-                ", turnedOn=" + turnedOn +
-                ", neighbours=" + neighbours +
-                '}';
+        return name + ": inventar " + Arrays.toString(inventory) + ", potrebne predmety " + neededItemsText() + ", komponent " + turnedOnText();
     }
 }
