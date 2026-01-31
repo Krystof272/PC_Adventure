@@ -62,6 +62,10 @@ public class Player {
         return inventory.toString();
     }
 
+    public int getMaxInventorySize() {
+        return maxInventorySize;
+    }
+
     public void setMaxInventorySize(int maxInventorySize) {
         this.maxInventorySize = maxInventorySize;
     }
