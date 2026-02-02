@@ -22,9 +22,4 @@ public class Speak implements Command {
         }
         return "Npc " + command + " neexistuje!";
     }
-
-    @Override
-    public boolean isExit() {
-        return false;
-    }
 }

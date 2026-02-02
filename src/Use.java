@@ -27,9 +27,4 @@ public class Use implements Command {
         }
         return "Item nenalezen v inventari!";
     }
-
-    @Override
-    public boolean isExit() {
-        return false;
-    }
 }

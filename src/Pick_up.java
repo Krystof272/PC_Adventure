@@ -23,9 +23,4 @@ public class Pick_up implements Command {
         }
         return "Item nenalezen v lokaci.";
     }
-
-    @Override
-    public boolean isExit() {
-        return false;
-    }
 }
