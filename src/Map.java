@@ -23,9 +23,4 @@ public class Map implements Command {
                            +-----+  +-----+
                 """;
     }
-
-    @Override
-    public boolean isExit() {
-        return false;
-    }
 }
