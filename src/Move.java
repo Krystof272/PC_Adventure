@@ -35,9 +35,4 @@ public class Move implements Command {
 
         return datos.getLocation(neighbour).getIntroductoryText();
     }
-
-    @Override
-    public boolean isExit() {
-        return false;
-    }
 }
