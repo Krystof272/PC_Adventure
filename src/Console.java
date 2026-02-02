@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * this class displays and processes input from the user
+ * this class displays and processes input from the user, also proceses some game mechanics
  */
 public class Console {
     private HashMap<String, Command> comands;
@@ -67,7 +67,7 @@ public class Console {
         }
         previusCommand = inputCommand;
         if (inputCommand.equals("inventar") || inputCommand.equals("pomoc") || inputCommand.equals("mapa")) {
-            inputCommand += " bagr";
+            inputCommand += " rdn";
         }
 
         System.out.println();
