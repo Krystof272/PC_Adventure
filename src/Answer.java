@@ -19,9 +19,4 @@ public class Answer implements Command {
         }
         return "Nejdrive musis zacit konverzaci s npc!";
     }
-
-    @Override
-    public boolean isExit() {
-        return false;
-    }
 }
