@@ -57,8 +57,6 @@ public class Console {
 
         System.out.println("\n" + datos.getLocation(player.getCurrentLocationId()));
         System.out.println(bugisek);
-
-
         System.out.print(">> ");
         String inputCommand = sc.nextLine();
 
@@ -68,14 +66,16 @@ public class Console {
             System.out.println("Zadej: <n> pro zopakovani prikazu :)");
         }
         previusCommand = inputCommand;
+        if (inputCommand.equals("inventar") || inputCommand.equals("pomoc") || inputCommand.equals("mapa")) {
+            inputCommand += " bagr";
+        }
+
         System.out.println();
         String[] inputCommnads = inputCommand.split(" ");
-
 
         if (inputCommnads.length > 1) {
             if (comands.containsKey(inputCommnads[0])) {
                 System.out.println(comands.get(inputCommnads[0]).execute(inputCommnads[1].toLowerCase(), player, datos));
-                isExit = comands.get(inputCommnads[0]).isExit();
 
                 userInputCheck(inputCommnads[1]);
                 gameMechanics();
@@ -107,7 +107,7 @@ public class Console {
                 """);
         sc.nextLine();
         System.out.println(comands.get("mapa").execute("mapa", player, datos));
-        System.out.println("Pro zobrazeni vsech prikazu zadejte: pomoc <hrac>\nJako prvni doporucuji promluvit si se Zakladackem!");
+        System.out.println("Pro zobrazeni vsech prikazu zadejte: pomoc\nJako prvni doporucuji promluvit si se Zakladackem!");
         sc.nextLine();
 
         do {
