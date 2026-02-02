@@ -6,7 +6,7 @@
       "homeLocationId": "psu",
       "initialEncouterText": "Ja jsem Zdrojik, pokud je potreba vydam ti elektrinu!\n1) Potrebuji elektrinu.\n2) Co s ni mam delat?",
       "answers": {
-        "1": "Tim padem, musis jit do Zakladni desky a vyzadat elektrinu tam, ona se potom objevi zde.",
+        "1": "Musis jit do Zakladni desky a vyzadat elektrinu tam, ona se potom objevi zde.",
         "2": "Elektrina je potreba vsude, zkus se trochu porozhlednout a sam to zjistis.",
         "3": "mozna"
       }
@@ -18,7 +18,7 @@
       "initialEncouterText": "Ja jsem chladik, rad poskytnu chlazeni ale zadarmo to nebude!\n1) Jak ziskam chlazeni?\n2) Kde muzu pouzit chlazeni?",
       "answers": {
         "1": "Vloz do teto lokace elektrinu a ja ji premenim na chlazeni.",
-        "2": "Muzes ho pouzit obzvlaste v mistnostech, ktere potrebuji spoustu elektriny (Cpu, Gpu).",
+        "2": "Muzes ho pouzit hlavne v mistnostech, ktere potrebuji spoustu elektriny (Cpu, Gpu).",
         "3": "mozna"
       }
     },
@@ -71,7 +71,7 @@
     {
       "id": "psu",
       "name": "Zdroj",
-      "introductoryText": "Odtud se rozvadi vsechna elektrina ze zasuvky do ostatnich komponentu. (Psu)",
+      "introductoryText": "Odtud se rozvadi vsechna elektrina ze zasuvky do ostatnich komponentu. Je tu elektricky nabita postava Zdrojik!(Psu)",
       "neededItems": {
         "elektrina": "4"
       },
