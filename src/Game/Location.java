@@ -15,6 +15,16 @@ public class Location {
     private boolean turnedOn;
     private HashMap<String, String> neighbours;
 
+    public Location(String id, String name, String introductoryText, HashMap<String, Integer> neededItems, String[] inventory, boolean turnedOn, HashMap<String, String> neighbours) {
+        this.id = id;
+        this.name = name;
+        this.introductoryText = introductoryText;
+        this.neededItems = neededItems;
+        this.inventory = inventory;
+        this.turnedOn = turnedOn;
+        this.neighbours = neighbours;
+    }
+
     /**
      * gets the neighbour location in that direction
      *
