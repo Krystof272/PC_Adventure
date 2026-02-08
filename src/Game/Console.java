@@ -15,7 +15,7 @@ public class Console {
     private HashMap<String, Command> comands;
     private boolean isExit;
     private Scanner sc;
-    private GameData datos = GameData.loadGameDataFromResources("/gameData.json");
+    private GameData datos;
     private Player player;
     private Bugisek bugisek;
     private HashMap<String, Integer> usedCommands;
@@ -30,6 +30,7 @@ public class Console {
         this.bugisek = new Bugisek();
         this.usedCommands = new HashMap<>();
         this.previusCommand = "";
+        this.datos = GameData.loadGameDataFromResources("/gameData.json");
     }
 
     /**
