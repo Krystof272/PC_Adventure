@@ -2,8 +2,6 @@ package Game;
 
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -29,9 +27,11 @@ class LocationTest {
 
     @Test
     void addItem() {
+        assertEquals("pridan", location.addItem("informace"));
     }
 
     @Test
     void neededItemsText() {
+        assertEquals("[informace 2]", location.neededItemsText());
     }
 }
