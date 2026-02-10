@@ -3,7 +3,7 @@ package Characters;
 import java.util.ArrayList;
 
 /**
- * this class creates player
+ * this class creates player and manages him
  */
 public class Player {
     private String name;

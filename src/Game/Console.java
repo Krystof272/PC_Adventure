@@ -21,6 +21,7 @@ public class Console {
     private HashMap<String, Integer> usedCommands;
     private String previusCommand;
 
+
     public Console() {
         this.comands = new HashMap<>();
         this.isExit = false;
@@ -87,10 +88,10 @@ public class Console {
                 gameMechanics();
                 usedCommands.replace(inputCommnads[0], usedCommands.get(inputCommnads[0]) + 1);
             } else {
-                System.out.println("Tento prikaz neexistuje, tato hra podporuje tyto prikazy: " + comands.get("pomoc").execute("hrac", player, datos));
+                System.out.println(Color.Red + "Tento prikaz neexistuje!!!" + Color.Reset + "\nTato hra podporuje tyto prikazy: " + comands.get("pomoc").execute("hrac", player, datos));
             }
         } else {
-            System.out.println("Zadejte prikaz ve forme: prikaz + co/kam/kdo!\nTato hra podporuje tyto prikazy: " + comands.get("pomoc").execute("hrac", player, datos));
+            System.out.println(Color.Red + "Zadejte prikaz ve forme: prikaz + co/kam/kdo!" + Color.Reset + "\nTato hra podporuje tyto prikazy: " + comands.get("pomoc").execute("hrac", player, datos));
         }
     }
 
@@ -113,15 +114,15 @@ public class Console {
                 """);
         sc.nextLine();
         System.out.println(comands.get("mapa").execute("mapa", player, datos));
-        System.out.println("Pro zobrazeni vsech prikazu zadejte: pomoc\nJako prvni doporucuji promluvit si se Zakladackem!");
+        System.out.println("Pro zobrazeni vsech prikazu zadejte: " + Color.Red + "pomoc" + Color.Reset + "\nJako prvni doporucuji promluvit si se " + Color.Blue + "Zakladackem!" + Color.Reset);
         sc.nextLine();
 
         do {
             execute();
         } while (!isExit);
 
-        System.out.println("Povedlo se!!! Pocitac se zapnul, nabiha windows a ty se pres monitor skrz hdmi kabel vracis zpet" +
-                " do normalni sveta!\n\n                        Dekuji za hrani me hry " + player.getName() + "!!!\n");
+        System.out.println(Color.Green + "Povedlo se!!!" + Color.Reset + " Pocitac se zapnul, nabiha windows a ty se pres monitor skrz hdmi kabel vracis zpet" +
+                " do normalni sveta!\n\n                        " + Color.Yellow + "Dekuji za hrani me hry " + Color.Reset + player.getName() + "!!!\n");
         System.out.println("Pouzite prikazy: " + usedCommandsText());
     }
 
@@ -171,7 +172,7 @@ public class Console {
             if (allTurnedOn) {
                 isExit = true;
             } else {
-                System.out.println("Zapnuti selhalo, tyto komponenty nemaji dostatek zdroju: " + notTurnedOn);
+                System.out.println("Zapnuti selhalo, tyto komponenty nemaji dostatek zdroju: " + Color.Red + notTurnedOn + Color.Reset);
             }
         }
     }

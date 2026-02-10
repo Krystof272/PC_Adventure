@@ -1,5 +1,6 @@
 package Characters;
 
+import Game.Color;
 import Game.GameData;
 
 import java.util.Random;
@@ -48,6 +49,6 @@ public class Bugisek {
 
     @Override
     public String toString() {
-        return "Bugisek je mezi " + location[0] + " a " + location[1] + "!";
+        return "Bugisek je mezi " + Color.Blue + location[0] + Color.Reset + " a " + Color.Green + location[1] + "!" + Color.Reset;
     }
 }

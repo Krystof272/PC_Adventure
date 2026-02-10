@@ -2,6 +2,9 @@ package Characters;
 
 import java.util.HashMap;
 
+/**
+ * this class represents npcs, player can talk to them
+ */
 public class NPC {
     private String id;
     private String name;

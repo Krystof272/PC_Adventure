@@ -71,7 +71,7 @@
     {
       "id": "psu",
       "name": "Zdroj",
-      "introductoryText": "Odtud se rozvadi vsechna elektrina ze zasuvky do ostatnich komponentu. Je tu elektricky nabita postava Zdrojik!(Psu)",
+      "introductoryText": "Odtud se rozvadi vsechna elektrina ze zasuvky do ostatnich komponentu.(Psu) Je tu elektricky nabita postava Zdrojik!",
       "neededItems": {
         "elektrina": "4"
       },
@@ -116,7 +116,7 @@
     {
       "id": "ram",
       "name": "RAM",
-      "introductoryText": "Zde se ukladaji vsechny docasne informace. Zije zde ramicek ale jen docasne... hihi :D (Ram)",
+      "introductoryText": "Zde se ukladaji vsechny docasne informace. Zije zde Ramicek ale jen docasne... hihi :D (Ram)",
       "neededItems": {
         "elektrina": 1,
         "informace": 1

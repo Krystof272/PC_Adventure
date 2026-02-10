@@ -138,9 +138,9 @@ public class Location {
      */
     public String turnedOnText() {
         if (turnedOn) {
-            return "zapnut";
+            return Color.Green + "zapnut" + Color.Reset;
         }
-        return "vypnut";
+        return Color.Red + "vypnut" + Color.Reset;
     }
 
     /**
@@ -165,6 +165,6 @@ public class Location {
 
     @Override
     public String toString() {
-        return "Jsi v mistnosti " + name + ": inventar " + Arrays.toString(inventory) + ", potrebne predmety " + neededItemsText() + ", komponent " + turnedOnText();
+        return "Jsi v mistnosti " + Color.Yellow + name + ":" + Color.Reset + " inventar " + Arrays.toString(inventory) + ", potrebne predmety " + Color.Blue + neededItemsText() + Color.Reset + ", komponent " + turnedOnText();
     }
 }
