@@ -33,7 +33,7 @@ public class Bugisek {
     }
 
     /**
-     * this method moves bugisek, it assignees second location to first and first location to seconds locations neighbour
+     * this method moves bugisek, it assignees second location to first and first location to seconds locations neighbor
      *
      * @param datos data container
      */
