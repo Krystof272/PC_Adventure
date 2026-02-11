@@ -5,6 +5,7 @@ import Game.GameData;
 
 /**
  * returns map of the game
+ * @author krystof
  */
 public class Map implements Command {
     @Override

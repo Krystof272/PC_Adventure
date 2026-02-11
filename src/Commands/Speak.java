@@ -6,6 +6,7 @@ import Game.GameData;
 
 /**
  * this class starts conversation with a npc
+ * @author krystof
  */
 public class Speak implements Command {
     /**

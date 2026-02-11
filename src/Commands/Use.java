@@ -5,6 +5,7 @@ import Game.GameData;
 
 /**
  * this class uses items from player inventory
+ * @author krystof
  */
 public class Use implements Command {
 

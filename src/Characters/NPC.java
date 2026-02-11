@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 /**
  * this class represents npcs, player can talk to them
+ * @author krystof
  */
 public class NPC {
     private String id;

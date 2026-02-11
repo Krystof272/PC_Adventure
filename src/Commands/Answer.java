@@ -6,6 +6,7 @@ import Game.GameData;
 
 /**
  * this class answers npcs questions
+ * @author krystof
  */
 public class Answer implements Command {
 

@@ -6,6 +6,7 @@ import Game.GameData;
 
 /**
  * this class moves the player
+ * @author krystof
  */
 public class Move implements Command {
     Bugisek bugisek;

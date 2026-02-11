@@ -8,8 +8,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+
 /**
  * this class displays and processes input from the user, also proceses some game mechanics
+ * @author krystof
  */
 public class Console {
     private HashMap<String, Command> comands;

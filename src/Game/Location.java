@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 /**
  * this class creates individual locations, gets info from them
+ * @author krystof
  */
 public class Location {
     private String id;

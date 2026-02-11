@@ -7,6 +7,7 @@ import java.util.Random;
 
 /**
  * this class creates and moves bugisek, evaulates if player encountered him
+ * @author krystof
  */
 public class Bugisek {
     private String[] location;

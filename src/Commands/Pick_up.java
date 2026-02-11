@@ -5,6 +5,7 @@ import Game.GameData;
 
 /**
  * this class pickups items from locations
+ * @author krystof
  */
 public class Pick_up implements Command {
 

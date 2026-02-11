@@ -12,7 +12,7 @@ import java.util.ArrayList;
 /**
  * Represents the game data loaded from a JSON file.
  * This class serves as a data container for all static game content, such as items, characters, locations, and quests.
- *
+ * @author Misa
  */
 public class GameData {
     private ArrayList<NPC> npcs;

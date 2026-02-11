@@ -1,5 +1,10 @@
 package Game;
 
+/**
+ * class container for strings
+ *
+ * @author krystof
+ */
 public class Color {
     public static String Reset = "\u001B[0m";
     public static String Red = "\u001B[31m";

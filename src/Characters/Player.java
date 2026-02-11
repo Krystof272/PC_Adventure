@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * this class creates player and manages him
+ * @author krystof
  */
 public class Player {
     private String name;

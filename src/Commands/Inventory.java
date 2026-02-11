@@ -5,6 +5,7 @@ import Game.GameData;
 
 /**
  * this class returns contents of the inventory
+ * @author krystof
  */
 public class Inventory implements Command {
 
