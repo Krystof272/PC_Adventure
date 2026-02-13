@@ -21,8 +21,7 @@ are some good ones that will help you get out. 😁
 
 ### Easier
 
-1. Download jar file *pc_adventure.jar* and java
-   22 https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html
+1. Download jar file *pc_adventure.jar* and [java 22](https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html)
 2. Open command line, navigate to the directory where your *pc_adventure.jar* is
 3. then type: *java -jar pc_adventure.jar* and my game should start 🤗
 
