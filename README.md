@@ -17,6 +17,11 @@ obstacles in the way, such as an evil bug NPC, that likes to
 empty everyone's inventory. But not all npsc are bad, there
 are some good ones that will help you get out. 😁
 
+## ✍️ Me (THe author)
+
+I am Krystof Maly, 17-year-old high school student. This is
+my **first readme**, I hope it got you to try my game. 🥰
+
 ## ❓ How to play the game ❓
 
 ### Easier
