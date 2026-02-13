@@ -7,7 +7,7 @@ computer.😧 Can you get out?
 
 * Easy to launch and play 😊
 * Quite fun to play
-* Only software needed is java 22 😎
+* Only software needed is Java 22 😎
 
 ## ℹ️Introduction text
 
@@ -21,13 +21,13 @@ are some good ones that will help you get out. 😁
 
 ### Easier
 
-1. Download jar file *pc_adventure.jar* and [java 22](https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html)
+1. Download jar file [pc_adventure.jar](https://github.com/Krystof272/PC_Adventure/raw/refs/heads/master/pc_adventure.jar) and [Java 22](https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html)
 2. Open command line, navigate to the directory where your *pc_adventure.jar* is
 3. then type: *java -jar pc_adventure.jar* and my game should start 🤗
 
 ### Harder
 
-1. Download zip file https://github.com/Krystof272/PC_Adventure/archive/refs/heads/master.zip
+1. Download [zip file](https://github.com/Krystof272/PC_Adventure/archive/refs/heads/master.zip)
 2. Extract it
 3. Open that file with a code application like *IntelliJ IDEA*
 4. Run the game through the Main file
